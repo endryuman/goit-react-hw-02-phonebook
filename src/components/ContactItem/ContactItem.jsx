@@ -1,7 +1,7 @@
 import styles from './ContactItem.module.css';
 export const ContactItem = ({ id, name, number, deleteContact }) => {
   return (
-    <li id={id} className={styles.contactsItem}>
+    <li className={styles.contactsItem}>
       <p>{name}</p>
       <p>{number}</p>
       <button onClick={() => deleteContact(id)}>Delete</button>
